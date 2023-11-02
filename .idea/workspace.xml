@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a637ee9-f0a6-42ad-b95a-a74502089a41" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/controller/UsuarioController.java" afterDir="false" />
-    </list>
+    <list default="true" id="5a637ee9-f0a6-42ad-b95a-a74502089a41" name="Changes" comment="Otto -- Criando repositório git do novo vitalusus" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,11 +96,23 @@
       <updated>1698882080598</updated>
       <workItem from="1698882085656" duration="119000" />
       <workItem from="1698882319317" duration="13128000" />
-      <workItem from="1698924863947" duration="9212000" />
+      <workItem from="1698924863947" duration="9526000" />
     </task>
+    <task id="LOCAL-00001" summary="Otto -- Criando repositório git do novo vitalusus">
+      <created>1698942223601</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698942223601</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Otto -- Criando repositório git do novo vitalusus" />
+    <option name="LAST_COMMIT_MESSAGE" value="Otto -- Criando repositório git do novo vitalusus" />
   </component>
 </project>
