@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="/Controller-CAD-LOG.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="shortcut icon" href="/logo.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <script>
+    function Teste() {
+      var tre = document.getElementById("opttre").value
+
+      if (tre == "Treinador(a)") {
+        document.write("")
+      }
+      else {
+        document.write("")
+      }
+    }
+    function Validar() {
+      var sen = document.getElementById("txtsen").value
+      var conSen = document.getElementById("txtconsen").value
+
+      if (sen != conSen) {
+        window.alert("Senhas Diferentes!")
+        return false
+      }
+      else {
+        return true
+      }
+    }
+  </script>
+  <title>Vitalusus+</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menuMenu">
+          <input type="checkbox" class="input-fake"/>
+          <div class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+          <ul class="menu-options"><br/><br/><br/>
+              <li><span class="material-symbols-outlined">settings</span>
+              <a class="menu-a"th:href="@{/Vitalusus-2h/Clientes/configT}" target="_self">Configuração</a>
+              </li>
+    
+              <li><span class="material-symbols-outlined">library_add</span>
+                  <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/bibliotecaVideos}">Seus Vídeos</a>
+              </li>
+    
+              <li><span class="material-symbols-outlined">trending_up</span>
+                  <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/Estatisticas}">Estatísticas</a>
+              </li>
+    
+              <li><span class="material-symbols-outlined">support_agent</span>
+                  <a class="menu-a" href="#">Contate-nos</a>
+              </li>
+    
+              <li><span class="material-symbols-outlined">info</span>
+                  <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/Sobre-nos}">Sobre nós</a>
+              </li>
+          </ul>
+        </nav>
+      <div class="imgLogo">
+          <img src="/Logo.png">
+        </div>
+        <div class="perfil">
+          <a th:href="@{/Vitalusus-2h/Clientes/HomeTreinador}" target="_self" id="iperfil">
+            <i class='bx bx-user'></i>
+          </a>
+        </div>
+      </header>
+<div class="formContainer">
+ 
+  <form th:action="@{/Vitalusus-2h/Clientes/clientesucessoEditar}" form method="post"  onsubmit="return Validar()" class="form">
+
+    <input type="hidden" name="_method" value="PUT"/>
+    <a th:href="@{/Vitalusus-2h/Clientes/user}" class="linkseta"  target="_self"><i class='bx bx-left-arrow-circle'
+      id="seta"></i></a>
+    <div class="txtcad">
+      <h1 class="textaocad">Editar sua conta</h1>
+    </div>
+    <div class="alignCad">
+      <label for="nome"></label>
+      <strong>NOME COMPLETO:</strong><input type="text" th:field="${cliente.nome}" class="input" name="nome"
+        required="required" id="nome">
+      <br />
+      <label for="email"></label>
+      <strong>EMAIL</strong> <input type="email" th:field="${cliente.email}" class="input" name="email"
+        required="required" id="email">
+      <br />
+      <label for="telefone"></label>
+      <strong>TELEFONE:</strong> <input type="tel" th:field="${cliente.telefone}" class="input" name="telefone" min=""
+        maxlength="" required="required" id="telefone">
+      <br />
+
+      <label for="txtsen"></label>
+      <strong>NOVA SENHA:</strong> <input type="password" class="input" th:field="${cliente.senha}" name="senha" min="8"
+        maxlength="8" required="required" id="txtsen" checked="checked">
+      <br />
+
+      <label for="txt-consen"></label>
+      <strong>CONFIRMAR NOVA SENHA:</strong> <input type="password" class="input"name="senha-confirm" min="" maxlength=""
+        required="required" id="txtconsen">
+      <br />
+
+      <br />
+      <br />
+    </div>
+
+    <div class="bt">
+      <input class="botao" type="submit" value="Confirmar" id="Botao">
+    </div>
+   
+  </form>
+ 
+</div>
+<footer>.</footer>
+</body>
+
+</html>

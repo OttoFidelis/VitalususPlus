@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Perfil Treinador</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/Controller-CAD-LOG.css">
+</head>
+
+<body>
+    <header>
+        <nav class="menuMenu">
+          <input type="checkbox" class="input-fake"/>
+          <div class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+          <ul class="menu-options"><br/><br/><br/>
+              <li><span class="material-symbols-outlined">settings</span>
+              <a class="menu-a"th:href="@{/Vitalusus-2h/Clientes/configT}" target="_self">Configuração</a>
+              </li>
+    
+              <li><span class="material-symbols-outlined">library_add</span>
+                  <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/bibliotecaVideos}">Seus Vídeos</a>
+              </li>
+    
+              <li><span class="material-symbols-outlined">trending_up</span>
+                  <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/Estatisticas}">Estatísticas</a>
+              </li>
+    
+              <li><span class="material-symbols-outlined">support_agent</span>
+                  <a class="menu-a" href="#">Contate-nos</a>
+              </li>
+    
+              <li><span class="material-symbols-outlined">info</span>
+                  <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/Sobre-nos}">Sobre nós</a>
+              </li>
+          </ul>
+        </nav>
+      <div class="imgLogo">
+          <img src="/Logo.png">
+        </div>
+        <div class="perfil">
+          <a th:href="@{/Vitalusus-2h/Clientes/HomeTreinador}" target="_self" id="iperfil">
+            <i class='bx bx-user'></i>
+          </a>
+        </div>
+      </header>
+</div>
+<div class="formContainer">
+    <div class="student">
+
+
+        <div class="container-nome">
+            <h4>Nome de usuário:</h4>
+            <p>*Nome de usuário*</p>
+        </div>
+        <div class="container">
+            <h4>Email</h4>
+            <p>*Email*</p>
+            <h4>Senha</h4>
+            <p>*Senha*</p>
+            <h4>Idade</h4>
+            <p>*Idade*</p>
+            <h4>Peso</h4>
+            <p>*Peso*</p>
+            <h4>Data de Entrada</h4>
+            <p>*Data de Entrada*</p>
+        </div>
+
+        <div class="alignUser">
+            
+            <img src="/user.jpeg" alt=""><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+       <a>Alterar foto de perfil</a>
+        </div>
+            <div class="alignConfig">
+               <button class="botao"><a th:href="@{/Vitalusus-2h/Clientes/editarSuaConta}" class="bt-submit">Alterar Informações </a></button>
+        </div>
+    </div>
+</div>
+    <footer class="footeruser">.</footer>
+</body>
+</html>

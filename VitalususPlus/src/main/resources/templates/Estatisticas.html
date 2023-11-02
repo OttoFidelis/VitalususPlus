@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Controller-CAD-LOG.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="/logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+  <header>
+    <nav class="menuMenu">
+      <input type="checkbox" class="input-fake"/>
+      <div class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+      <ul class="menu-options"><br/><br/><br/>
+          <li><span class="material-symbols-outlined">settings</span>
+          <a class="menu-a"th:href="@{/Vitalusus-2h/Clientes/configT}" target="_self">Configuração</a>
+          </li>
+
+          <li><span class="material-symbols-outlined">library_add</span>
+              <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/bibliotecaVideos}">Seus Vídeos</a>
+          </li>
+
+          <li><span class="material-symbols-outlined">trending_up</span>
+              <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/Estatisticas}">Estatísticas</a>
+          </li>
+
+          <li><span class="material-symbols-outlined">support_agent</span>
+              <a class="menu-a" href="#">Contate-nos</a>
+          </li>
+
+          <li><span class="material-symbols-outlined">info</span>
+              <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/Sobre-nos}">Sobre nós</a>
+          </li>
+      </ul>
+    </nav>
+  <div class="imgLogo">
+      <img src="/Logo.png">
+    </div>
+    <div class="perfil">
+      <a th:href="@{/Vitalusus-2h/Clientes/HomeTreinador}" target="_self" id="iperfil">
+        <i class='bx bx-user'></i>
+      </a>
+    </div>
+  </header>
+  <div class="formContainer">
+      <form class="form">
+        <a th:href="@{/Vitalusus-2h/Clientes/HomeTreinador}" class="linkseta"  target="_self"><i class='bx bx-left-arrow-circle'
+          id="seta"></i></a>
+          
+        <div class="txtcad">
+          <h1 id="Text-H1-estat">Estatísticas</h1><br/>
+        </div>
+        <p class="txtstat">Média de visualizações por vídeo:<div class="espec">*Média de visualizações*</div></p>
+        <p class="txtstat">Quantidade de vídeos que você já enviou:<div class="espec">*Quantidade de vídeos já enviados*</div> </p>
+        <p class="txtstat">Média da avaliação dos seus vídeos:<div class="espec">*Média da avaliação*</div> </p>
+        <p class="txtstat">Numero de inscritos:<div class="espec">*Quantidade do número de inscritos</div></p><br/><br/><br/>
+        <h1 id="Text-H1-estat">Seu vídeo mais visualizado: </h2><br/>
+        <div class="video">
+            <i class='bx bxs-videos' id="videoicon"></i>
+            <h3 id="Text-H3-estat">*Nome do video*</h3>
+            <h4 id="Text-H4-estat">*Visualizações do vídeo*</h4>
+          </form>
+        </div>
+      </div>
+        <footer>.</footer>
+      </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="/Controller-CAD-LOG.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="shortcut icon" href="/logo.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <script>
+    function Teste() {
+      var tre = document.getElementById("opttre").value
+
+      if (tre == "Treinador(a)") {
+        document.write("")
+      }
+      else {
+        document.write("")
+      }
+    }
+    function Validar() {
+      var sen = document.getElementById("txtsen").value
+      var conSen = document.getElementById("txtconsen").value
+
+      if (sen != conSen) {
+        window.alert("Senhas Diferentes!")
+        return false
+      }
+      else {
+        return true
+      }
+    }
+  </script>
+  <title>Vitalusus+</title>
+</head>
+
+<body>
+  <header>
+  <div class="imgLogo">
+      <img src="/Logo.png">
+    </div>
+    </div>
+  </header>
+<div class="formContainer">
+ 
+  <form  method="post" onsubmit="return Validar()" class="form">
+    <a th:href="@{/Vitalusus-2h/Clientes/login}" class="linkseta"  target="_self"><i class='bx bx-left-arrow-circle'
+      id="seta"></i></a>
+      <div class="sombra"></div>
+    <div class="txtcad">
+      <h1 class="textaocad">Cadastre-se</h1>
+    </div>
+    <div class="alignCad">
+      <label for="nome"></label>
+      <strong>NOME COMPLETO:</strong><input type="text"  class="input" name="nome"
+        required="required" id="nome">
+      <br />
+      <strong>GÊNERO:</strong>
+      <select  class="input" required="required" name="genero">
+        <option value="masculino" id="opttre">Masculino</option>
+        <option value="Feminino" id="opttre">Feminino</option>
+        <option value="outro/prefiro não dizer" id="opttre">Outro/prefiro não dizer</option>
+      </select><br/>
+      <label for="email"></label>
+      <strong>EMAIL</strong> <input type="email"  class="input" name="email"
+        required="required" id="email">
+      <br />
+      <label for="data"></label>
+      <strong>DATA DE NASCIMENTO:</strong> <input type="date"  class="input"
+        name="dataNasc" min="" maxlength="" required="required" id="data">
+      <br />
+      <label for="telefone"></label>
+      <strong>TELEFONE:</strong> <input type="tel"  class="input" name="telefone" min=""
+        maxlength="" required="required" id="telefone">
+      <br />
+
+      <label for="txtsen"></label>
+      <strong>SENHA:</strong> <input type="password" class="input"  name="senha" min="8"
+        maxlength="8" required="required" id="txtsen" checked="checked">
+      <br />
+
+      <label for="txt-consen"></label>
+      <strong>CONFIRMAR SENHA:</strong> <input type="password" class="input"name="senha-confirm" min="" maxlength=""
+        required="required" id="txtconsen">
+      <br />
+
+      <strong>TIPO DE PESSOA:</strong>
+      <select  class="input" required="required" name="tipoPessoa">
+        <option value="Treinador(a)" id="opttre">Treinador(a)</option>
+      </select>
+      <br />
+      <br />
+    </div>
+
+    <div class="cadastrar">
+      <a th:href="@{/Vitalusus-2h/Clientes/login}">Já tem conta?</a>
+    </div>
+    <div class="bt">
+      <input class="botao" type="submit" value="Confirmar" id="Botao">
+    </div>
+   
+  </form>
+ 
+</div>
+<footer>.</footer>
+</body>
+
+</html>

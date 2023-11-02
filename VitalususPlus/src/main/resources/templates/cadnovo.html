@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/cadcss.css">
+    <link rel="shortcut icon" href="/logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@800&display=swap" rel="stylesheet">
+    <title>Vitalusus+</title>
+    <script>
+    function Validar() {
+		var sen = document.getElementById("txtsen").value
+		var conSen = document.getElementById("txtconsen").value
+		
+		if (sen != conSen) {
+			window.alert("Senhas Diferentes!")
+			return false
+		}
+		else{
+			return true
+		}
+	}
+    </script>
+    
+</head>
+<body>
+    <div class="header">
+        <header>.</header>
+        <div class="line"></div>
+    </div>
+<div class ="logo">
+    <img src="/Logo2.png" >
+</div>
+    <h1>Cadastrar</h1>
+    <form th:action="@{/Vitalusus-2h/Clientes/clienteSucesso}" method="post" onsubmit="return Validar()">
+    <div class="Desing-login">
+    <p>Academia</p>
+    <p>Vitalusus+</p>
+</div>
+    <div class="input">
+    <strong>NOME:</strong> <input type="text" th:field="${cliente.nome}" class="Alteracao" name="name" min="" maxlength="" required="required">
+    <strong>SENHA:</strong>  <input type="password" class="Alteracao" th:field="${cliente.senha}"  name="name" min="8"  maxlength="8" required="required" id="txtsen" checked="checked">
+    <strong>CONFIRMAR SENHA:</strong>  <input type="password" class="Alteracao" name="Consenha" min="" maxlength="" required="required" id="txtconsen">
+    <strong>EMAIL</strong><input type="email" th:field="${cliente.email}" class="Alteracao" name="email" min="" maxlength="" required="required">
+    <strong>DATA DE NASCIMENTO</strong>  <input type="date" class="Alteracao" th:field="${cliente.dataDeNascimento}" name="name" min="8" maxlength="8" required="required" checked="checked">    <strong>TELEFONE:</strong> <input type="tel" th:field="${cliente.telefone}" class="Alteracao" name="telefone" min="" maxlength="" required="required">
+    <strong>TIPO DE PESSOA:</strong> <select th:field="${cliente.tipoPessoa}" class="Alteracao" required="required" name="tipoPessoa"> <option value="Aluno(a)">Aluno(a)</option> <option value="Treinador(a)">Treinador(a)</option> </select>
+    
+    <div class="cadastrar">
+        <a href="CADASTRAR.html">Cadastre-se</a>
+        <a href="">Esqueceu sua senha?</a>
+      </div>
+    <input class="botao" type="submit" value="Confirmar" id="Botao" >
+</div>
+</form>
+</body>
+</html>

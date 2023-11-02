@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+/*CODIGOS PRINCIPAIS*/
+body,
+html {
+    height: 120%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body {
+    background-image: url("background.jpeg");
+    background: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#fff;
+    
+}
+header {
+    position: fixed;
+    padding: 0;
+    top:0;
+    width:100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(41, 0, 0) 35%, rgb(255, 0, 0) 100%);
+    box-shadow: 0 0 4px black;
+    border-radius: 4px;
+    z-index:1;
+    opacity:0.9;
+}
+/*FIM DE CODIGO PRINCIPAL*/
+
+
+
+/*HomeTreinador.html*/
+/*h1*/
+.TrenH1{
+    margin-top:150px;
+    margin-left: 60px;
+}
+/*botoes homeTreinador*/
+
+/*mexa aqui se quiser deixar os botões bonitinhos*/
+.AtributBotton button{
+    border:none;
+    background-color: #ff000000;
+    color:#fff;  
+    font-size: 15px;
+}
+.AtributBotton button:hover{
+    border:none;
+    background-color: #ff000000;
+    color:#fff;  
+    transition: 0.5s;
+    font-size: 17px;
+}
+
+.AtributBotton button{
+    border:none;
+    background-color: #ff000000;
+    color:#fff;  
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.AtributBotton{
+   text-align: center;
+   margin-top: 300px;
+  
+}
+/*Fim de /*/
+
+
+
+.alignSeusVideos,.alingCriarVideo,.alignEstatisticas{
+    margin-top: 60px;
+    height:100px;
+    width: 300px; 
+    background-color: #b40000;
+    border-radius: 10px;
+    border: solid 1px black;
+    cursor: pointer;
+}
+.alignSeusVideos:hover,.alingCriarVideo:hover,.alignEstatisticas:hover{
+    margin-top: 60px;
+    height:100px;
+    width: 300px; 
+    background-color: #b40000da;
+    border-radius: 10px;
+    border: solid 1px black;
+    cursor: pointer;
+}
+
+
+/*alinhar as divs dos botoes*/
+.alignSeusVideos{
+    position: absolute;
+    top: 230px;
+    left:19%;
+    transform: translate(-81%);
+}
+.alingCriarVideo{
+    position: absolute;
+    top: 230px;
+    left:50%;
+    transform: translate(-50%)
+
+}
+.alignEstatisticas{
+    position: absolute;
+    top: 230px;
+    left:80%;
+    transform: translate(-20%)
+}
+/*Fim de / */
+
+/*ATRIBUTO DOS ICONES*/
+.alignIconMovie > .material-symbols-outlined{
+    font-size: 60px;
+}
+.alignIconPublicar > .material-symbols-outlined{
+    font-size: 60px;
+}
+.alignIconEstatisticas > .material-symbols-outlined{
+    font-size: 60px;
+}
+/*align icones*/
+.alignIconMovie{
+    position: absolute;
+    top: 230px;
+    left:15%;
+    transform: translate(-85%);
+}
+.alignIconPublicar{
+    position: absolute;
+    top: 230px;
+    left:50%;
+    transform: translate(-50%);
+}
+.alignIconEstatisticas{
+    position: absolute;
+    top: 230px;
+    left:85%;
+    transform: translate(-15%);
+}
+
+
+
+/*MENU*/
+
+menu {
+    position: fixed;
+}
+
+#menu-options {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 1%;
+    list-style: none;
+    width: auto;
+    font-size: 20px;
+    padding: 0;
+    margin-top: 1%;
+    background-color: #ad0000;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+#menu-options li {
+    padding: 10px 0;
+}
+
+#menu-options a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.bx-x:focus+#menu-options {
+    display: block;
+}
+
+#menu-options:target {
+    display: block;
+}
+
+.bx-x {
+    padding-left: 0%;
+    font-size: 60px;
+}
+.bxs-user-plus{
+   
+}
+.bx.bx-menu{
+    font-size:60px
+}
+/*ajuste no "X"*/
+.bx-x {
+    padding-left: 0%;
+    font-size: 60px;
+}
+menu li a .bx-x{
+    margin-top: -45px;
+    margin-left: -70px;
+    top:0;
+    left:0;
+}
+.bx-x{
+    font-size: 90px;
+}
+
+
+.element {
+    width: 100px;
+    height: 100px;
+    
+    position: absolute;
+    cursor: pointer;
+  }
+
+  /*LOGO*/
+  
+.img1 {
+    width: 80px;
+    height: 100px;
+}
+/*alinhar icones header*/
+
+.bx-menu {
+    font-size: 40px;
+    position: fixed;
+    left: 20px;
+    margin-top: 10px;
+}
+.alinharUser {  
+    position: fixed;
+    margin-top: 10px;
+    z-index: 1;
+    top: 2%;
+    right: 0px;
+    font-size: 60px;
+}
+
+.alinharImg {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*PUBLICAR.HTML*/
+.linkseta {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.txtcad {
+    margin-top:50px;
+    margin-left: -20px;
+}
+.txtcad  h1 {
+    margin: 30px;
+  
+    
+ 
+    font-style: italic;
+    color: rgb(255, 255, 255);
+}
+
+.imgLogo img {
+    width: 5%;
+}
+
+.imgLogo {
+    text-align: center;
+}
+
+strong {
+    margin-left: 17%;
+    color: white;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.alignTitle{
+position: absolute;
+left:-70px;
+}
+.alignTreiner{
+    position: absolute;
+    right:100px;
+}
+.inputTreb{
+    width:200px;
+    height: 30px;
+    background-color: white;
+    border-radius:5px;
+    border: none;
+    display: block;
+    margin-left: 0%;
+}
+.input {
+    background-color: white;
+    border-radius:5px;
+    border: none;
+    display: block;
+    width: 500px;
+    margin-left: 17%;
+}
+
+.input:hover {
+    opacity: 1;
+    background-color: rgb(238, 238, 238);
+    color: rgb(0, 0, 0);
+}
+
+#Botao {
+    margin-top: 15px;
+}
+
+.bx-user,
+.bx-menu {
+    font-size: 60px;
+    color:white;
+}
+
+.bx-user:hover {
+    cursor: pointer;
+    color: white;
+}
+
+
+.bx-menu:hover {
+    color: white;
+}
+
+
+#seta {
+    color: white;
+    margin-right: 500px;
+    font-size: 50px;
+}
+
+
+
+.perfil {
+    position: fixed;
+    right: 0;
+    top: 20px;
+}
+
+.cadastrar {
+    text-align: center;
+    display: grid;
+    margin: 10x;
+}
+
+.botao {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: solid 2px black;
+    border-radius: 20px;
+    box-shadow: 0 0 4px;
+
+}
+
+.botao:hover {
+    background-color: white;
+    color: black
+}
+
+.bt {
+    margin-left: 75%;
+    margin-top: 100px;
+    
+}
+
+
+
+.form {
+    background-color: #af0000d3;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 8px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    height:80vh;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 130px)
+}
+/*Treinador.html*/
+

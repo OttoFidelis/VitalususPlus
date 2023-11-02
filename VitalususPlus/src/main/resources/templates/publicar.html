@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="/Controller-CAD-LOG.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="shortcut icon" href="/logo.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <title>Vitalusus+</title>
+</head>
+
+<body>
+ <header>
+    <nav class="menuMenu">
+      <input type="checkbox" class="input-fake"/>
+      <div class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+      <ul class="menu-options"><br/><br/><br/>
+          <li><span class="material-symbols-outlined">settings</span>
+          <a class="menu-a"th:href="@{/Vitalusus-2h/Clientes/configT}" target="_self">Configuração</a>
+          </li>
+
+          <li><span class="material-symbols-outlined">library_add</span>
+              <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/bibliotecaVideos}">Seus Vídeos</a>
+          </li>
+
+          <li><span class="material-symbols-outlined">trending_up</span>
+              <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/Estatisticas}">Estatísticas</a>
+          </li>
+
+          <li><span class="material-symbols-outlined">support_agent</span>
+              <a class="menu-a" href="#">Contate-nos</a>
+          </li>
+
+          <li><span class="material-symbols-outlined">info</span>
+              <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/Sobre-nos}">Sobre nós</a>
+          </li>
+      </ul>
+    </nav>
+  <div class="imgLogo">
+      <img src="/Logo.png">
+    </div>
+    <div class="perfil">
+      <a th:href="@{/Vitalusus-2h/Clientes/HomeTreinador}" target="_self" id="iperfil">
+        <i class='bx bx-user'></i>
+      </a>
+    </div>
+  </header>
+  <div class="formContainer">
+  <form th:action="@{/Vitalusus-2h/Clientes/clienteSucesso}" method="post" onsubmit="return Validar()" class="formPublicar">
+    <a href="HomeTreinador.html" th:href="@{/Vitalusus-2h/Clientes/HomeTreinador}" class="linkseta"  target="_self"><i class='bx bx-left-arrow-circle'
+      id="seta"></i></a>
+      
+    <div class="txtcad">
+      <h1 class="textaocad">Criar vídeoAula</h1>
+    </div>
+    <div class="alignTitle">
+      <strong>Titulo</strong><input type="text"  placeholder="Dê um título bonito e atraente..." class="input" name="name"
+        required="required">
+      <br />
+
+      <strong>Descrição</strong> <textarea  class="input" name="name"
+      required="required" id="" cols="30" rows="10"></textarea>
+      <br />
+</div>
+<div class="alignTreiner">
+      <strong>Categoria de Treino</strong> 
+      <select type="tel"  class="inputTreb"  name="categoria" min=""
+      maxlength="" required="required" id="">
+        <option value="musculação">Musculação</option>
+        <option value="levantamento">Levantamento</option>
+        <option value="yoga">Yoga</option>
+      </select>
+      <br />
+      <strong>MIDIA</strong>
+      <input  class="inputTreb" name="name" required="required" type="url"  id="">
+      </select>
+    </div>
+    <div class="btPublicar">
+      <input class="botao" type="submit" value="Enviar vídeo!" id="Botao">
+    </div>
+    </div>
+    
+  </form>
+</div>
+<footer>.</footer>
+</body>
+
+</html>

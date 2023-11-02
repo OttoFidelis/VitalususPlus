@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/LoginNovo.css">
+    <link rel="shortcut icon" href="/logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@800&display=swap" rel="stylesheet">
+    <title>Vitalusus+</title>
+</head>
+<body>
+    <div class="header">
+        <header>.</header>
+        <div class="line"></div>
+    </div>
+
+    <img src="/Logo2.png" >
+    <h1>Login</h1>
+    <form th:action="@{/Vitalusus-2h/cliente/login}">
+    <div class="Desing-login">
+    <p>Academia</p>
+    <p>Vitalusus+</p>
+</div>
+    <div class="input">
+    <strong>EMAIL</strong>  <input type="email" class="Alteracao" th:field="*{email}" min="" maxlength="200" placeholder="Nome@gmail.com" required="required"  checked="checked">
+    <strong>SENHA:</strong>  <input type="password" class="Alteracao" th:field="*{senha}"  name="name" min="8" placeholder="********" maxlength="8" required="required" checked="checked">
+    <div class="cadastrar">
+        <a href="cadnovo.html">Cadastre-se</a>
+        <a href="">Esqueceu sua senha?</a>
+      </div>
+    <input class="botao" type="submit" value="Confirmar" id="Botao">
+</div>
+</form>
+</body>
+</html>

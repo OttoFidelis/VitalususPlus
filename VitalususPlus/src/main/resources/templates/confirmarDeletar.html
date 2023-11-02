@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="/Controller-CAD-LOG.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="shortcut icon" href="/logo.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Vitalusus+</title>
+</head>
+<body> 
+  <header>
+    <div class="imgLogo">
+        <img src="/Logo.png">
+      </div>
+      </div>
+    </header>
+    <div class="formContainer">
+     
+    <form th:action="@{/Vitalusus-2h/Clientes/confirmarDeletarSucesso}" method="post" class="form"> 
+      <h1>CONFIRME O SEU LOGIN PARA PODER DELETAR A SUA CONTA</h1>    
+      <strong>EMAIL:</strong>  <input type="email" class="input" name="email" min="" maxlength="" required="required">
+     <br/>
+     <br/>
+     
+      <strong>SENHA:</strong>  <input type="password" class="input" name="senha" min="" maxlength="" required="required">
+     <br/>
+     <br/>
+     <br/>
+     
+      <div>
+        <br/>
+        <br/>
+        <div class="bt" >
+          <input class="botao" type="submit" value="Confirmar" id="Botao">
+        </div>
+        </div>
+    </form>
+  </div>
+    <footer>.</footer>
+    </body>
+</html>

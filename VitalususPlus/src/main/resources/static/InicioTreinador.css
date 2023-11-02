@@ -1,0 +1,384 @@
+/*CODIGOS PRIMARIOS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+body,
+html {
+    height: 300vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body {
+    background-image: url("/background.jpeg");
+    background: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+menu {
+
+    padding: 0;
+    margin: 0;
+    margin-left: 0;
+    z-index: 1;
+}
+
+header {
+    position: relative;
+    margin: 0;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(41, 0, 0) 35%, rgba(255, 0, 0, 1) 100%);
+}
+
+/*
+.header2{
+    background-color: black;
+    z-index: 1;
+    position: relative;
+}
+*/
+
+
+/*C L A S S E S*/
+
+.bx-menu {
+    font-size: 40px;
+    position: fixed;
+    left: 20px;
+    margin-top: 10px;
+}
+
+.bxs-user-plus {
+    position: fixed;
+    margin-top: 10px;
+    z-index: 1;
+    top: 0%;
+    right: 10px;
+    font-size: 40px;
+}
+
+.alinharUser {}
+
+.img1 {
+    width: 80px;
+    height: 100px;
+}
+
+.alinharImg {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CLASSES DO  C O N T E I N E R*/
+.p1 {
+    color: white;
+    margin-left: 20px;
+}
+
+main {
+    /*DE OLHO AQUI*/
+
+    height: 300px;
+
+    width: 100%;
+    /*
+    width:1365px;
+    */
+    background-color: #8f0000;
+    transform: translate(0%, 100px);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+
+.content {
+    height: 230px;
+    /*
+    width:1350px;
+*/
+    /*DE OLHO AQUI*/
+    width: 2000px;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    position: absolute;
+
+    top: 20px;
+    left: 50px;
+
+
+}
+
+.s1,
+.slide {
+    margin: 0px;
+}
+
+.navigation {
+
+    position: absolute;
+
+    bottom: 0px;
+
+    left: 0%;
+
+    transform: translate(58%);
+
+    display: flex;
+
+}
+
+.bar {
+
+    width: 18px;
+
+    height: 18px;
+
+    border-radius:50%;
+
+    border:2px solid white ;
+
+    background-color: rgb(59, 59, 59);
+
+    margin: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    transform: translate(-100%);
+}
+
+.bar:hover {
+
+    background-color: rgb(255, 0, 0);
+
+}
+
+input {
+
+    display: none
+}
+
+.Rolls {
+
+    display: flex;
+
+    width: 500%;
+
+    height: 86.5%;
+
+}
+
+.slide {
+
+    padding-right: 0%;
+
+    display: flex;
+
+    transition: .4s;
+
+}
+
+.slide img {
+    border-bottom: 3px solid white;
+
+    height: 100%;
+
+    width: 15%;
+}
+
+.s1 img {
+    height: 100%;
+    width: 20%;
+}
+
+.slide img {}
+
+#roll1:checked~.s1 {
+
+    margin-left: 0;
+
+}
+
+#roll2:checked~.s1 {
+
+    margin-left: -25%;
+
+}
+
+#roll3:checked~.s1 {
+
+    margin-left: -50%;
+
+}
+
+#roll4:checked~.s1 {
+
+    margin-left: -75%;
+
+}
+
+#roll5:checked~.s1 {
+
+    margin-left: -100%;
+
+}
+
+.slide,
+.s1 {
+
+    display: flex;
+
+    height: 98%;
+
+    width: 25%;
+
+}
+
+/*MENU*/
+menu {
+    position: fixed;
+}
+
+#menu-options {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 2%;
+    list-style: none;
+    width: auto;
+    font-size: 20px;
+    padding: 0;
+    margin-top: 1%;
+    background-color: #ad0000;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+#menu-options li {
+    padding: 10px 0;
+}
+
+#menu-options a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.bx-x:focus+#menu-options {
+    display: block;
+}
+
+#menu-options:target {
+    display: block;
+}
+
+.bx-x {
+    padding-left: 0%;
+    font-size: 60px;
+}
+
+/*DIV DE BAIXO*/
+.SobreO {
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 400px);
+    width: 600px;
+    background-color: #f7f7f7;
+}
+
+.p2 {
+    padding-top: 50px;
+    margin-left: 40px;
+    font-size: larger;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Vitalusus {
+    position: absolute;
+    display: flex;
+    color: #ff0000;
+    top: 130px;
+    margin-left: 410px;
+    font-size: larger;
+}
+
+.a1 {
+    font-style: normal;
+}
+
+.a2 {
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.LogoAjust img {
+    height: 170px;
+    width: 180px;
+}
+
+.LogoAjust {
+    top: 35px;
+    left: 75%;
+    transform: translate(-30%);
+    position: absolute;
+}
+
+/*COMEÇAR (TELA DE BAIXO DA LOGO)*/
+.comecar {
+    height: 300px;
+    position: absolute;
+    top: 1400px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 1200px;
+    background-color: #f7f7f7;
+
+}
+
+.ajustH1 {
+    color: #ff0000;
+    font-size: larger;
+}
+
+.p3 {
+    padding-left: 10px;
+    font-size: larger;
+}
+
+.treinadorAjust {
+    font-size: larger;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+}
+
+.treinadorAjust h1 {
+    color: #ff0000;
+}
+
+.destacar {
+    color: #ff0000;
+}
+
+.destacar2 {
+    color: #ff0000;
+}

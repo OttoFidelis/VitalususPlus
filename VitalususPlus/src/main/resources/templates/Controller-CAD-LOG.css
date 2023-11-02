@@ -1,0 +1,1127 @@
+/*Cadastro*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+
+
+html,
+body {
+
+    height: 100%;
+
+    width: 100%;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+.uservezin {
+
+    font-size: 100px;
+
+    color: #FFFFFF;
+
+    margin-left: 20px;
+
+}
+
+.linkseta {
+
+    position: absolute;
+
+    width: 12px;
+
+    z-index: 1;
+
+}
+
+th,
+td {
+
+    border: 1px solid #FFFFFF;
+
+    padding: 8px;
+
+    text-align: center;
+
+    background-color: #ff0000;
+
+}
+
+th {
+
+    background-color: #ff0000;
+
+}
+
+.txtcad {
+
+    margin-top: 0;
+
+}
+
+
+
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    background-image: url("background.jpeg");
+
+    background-repeat: no-repeat;
+
+    background-size: 100%;
+
+    background-attachment: fixed;
+
+    background: cover;
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 100vh;
+
+}
+
+.txtconfig {
+
+    align-self: center;
+
+    margin-top: 200px;
+
+    display: inline-flex;
+
+}
+
+.clienteSucessoFooter {
+
+    margin-top: 20%
+}
+
+.configurations {
+
+    text-align: center;
+
+    font-size: 35px;
+
+    color: white
+}
+
+.button {
+
+    text-align: center;
+
+    width: 150px;
+
+    align-self: center;
+
+}
+
+.configp {
+
+    color: white;
+
+    text-align: center;
+
+    align-self: center;
+
+    background-color: rgba(245, 9, 9, 0.63);
+
+    width: 150px;
+
+}
+
+h1 {
+
+    margin: 30px;
+
+    font-family: 'Work Sans', sans-serif;
+
+    text-align: center;
+
+    color: white;
+
+}
+
+
+
+img {
+
+    width: 5%;
+
+}
+
+
+
+.imgLogo {
+
+    text-align: center;
+
+}
+
+.imgLogo img {
+
+    width: 4.5%;
+
+    height: 4.5%;
+
+}
+
+.imgLogologin {
+
+    text-align: center;
+
+}
+
+.imgLogologin img {
+
+    width: 4.5%;
+
+    height: 130%;
+
+}
+
+table {
+
+    box-shadow: 0 0 4px #FA8072;
+
+    border-collapse: collapse;
+
+    width: 100%;
+
+}
+
+strong {
+
+    margin-left: 17%;
+
+    color: white;
+
+    text-align: left;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.cor {
+
+    background-color: rgba(245, 9, 9, 0.63);
+
+    width: 7%;
+
+    max-width: 800px;
+
+    text-align: center;
+
+    align-self: center;
+
+    padding: 30px;
+
+    border-radius: 8px;
+
+    margin-top: 150px;
+
+    margin-bottom: 40px;
+
+    height: 1000px;
+
+    margin-bottom: 0px;
+
+}
+
+header {
+
+    position: fixed;
+
+    background: rgb(2, 0, 36);
+
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 0, 0, 1) 100%);
+
+    padding: 5px;
+
+    width: 100%;
+
+    min-width: 100vw;
+
+    box-shadow: 0 0 4px black;
+
+    border-radius: 4px;
+
+    z-index: 2;
+
+    height: 8%
+}
+
+
+
+.input {
+
+    background-color: white;
+
+    border-radius: 30px;
+
+    display: block;
+
+    width: 500px;
+
+    margin-left: 17%;
+
+}
+
+
+
+.input:hover {
+
+    opacity: 0.8;
+
+    background-color: red;
+
+    color: white;
+
+}
+
+
+
+#Botao {
+
+    margin-top: 15px;
+
+}
+
+
+
+.botao {
+
+    padding: 10px;
+
+    background-color: red;
+
+    color: white;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    border: solid 2px black;
+
+    border-radius: 20px;
+
+    box-shadow: 0 0 4px;
+
+}
+
+
+
+.botao:hover {
+
+    background-color: white;
+
+    color: black
+}
+
+
+
+.bt {
+
+    text-align: center;
+
+}
+
+
+
+.form {
+
+    background-color: rgba(245, 9, 9, 0.63);
+
+    width: 100%;
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    padding: 30px;
+
+    border-radius: 8px;
+
+    margin-top: 150px;
+
+}
+
+
+
+
+
+a {
+
+    padding: 10px;
+
+    font-family: 'Lato', sans-serif;
+
+    text-decoration: none;
+
+    color: white;
+
+}
+
+
+
+a:hover {
+
+    text-decoration: underline;
+
+    color: blue;
+
+    font-size: 18px;
+
+}
+
+
+
+.bx-user,
+.bx-menu {
+
+    font-size: 60px;
+
+}
+
+
+
+.bx-user:hover {
+
+    cursor: pointer;
+
+    color: white;
+
+}
+
+
+
+
+
+.bx-menu:hover {
+
+    color: white;
+
+}
+
+
+
+
+
+#seta {
+
+    color: white;
+
+    margin-right: 500px;
+
+    font-size: 50px;
+
+}
+
+
+
+footer {
+
+    background: rgb(2, 0, 36);
+
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 0, 0, 1) 100%);
+
+    box-shadow: 0 0 4px black;
+
+    margin-top: 30%;
+
+    z-index: 1;
+
+    padding: 10px;
+
+}
+
+.perfil {
+
+    position: fixed;
+
+    right: 0;
+
+    top: 20px;
+
+}
+
+.sucesso {
+
+    text-align: center;
+
+    color: #fff;
+
+    text-decoration: underline;
+
+    margin: 0px;
+
+    margin-top: 30px
+}
+
+.voltartab {
+
+    margin-top: 20px;
+
+    align-self: center;
+
+    text-align: center;
+
+    display: grid;
+
+}
+
+.cadastrar {
+
+    align-self: center;
+
+    text-align: center;
+
+    display: grid;
+
+    margin-inline: 300px;
+
+}
+
+/*Menu*/
+
+menu {
+
+    position: fixed;
+
+}
+
+
+
+#menu-options {
+
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+
+    left: 2%;
+
+    list-style: none;
+
+    width: auto;
+
+    font-size: 20px;
+
+    padding: 0;
+
+    margin-top: 1%;
+
+    background-color: #ad0000;
+
+    border-radius: 10px;
+
+    color: #fff;
+
+    text-align: center;
+
+}
+
+
+
+#menu-options li {
+
+    padding: 10px 0;
+
+}
+
+
+
+#menu-options a {
+
+    text-decoration: none;
+
+    color: #fff;
+
+}
+
+
+
+#menu-button {
+
+    background: none;
+
+    border: none;
+
+    padding: 0;
+
+    cursor: pointer;
+
+}
+
+
+
+.bx-x:focus+#menu-options {
+
+    display: block;
+
+
+}
+
+.bx-x:focus {
+
+    top: 0;
+
+    left: 0;
+
+    position: relative;
+
+}
+
+#menu-options:target {
+
+
+    display: block;
+
+}
+
+
+
+/*ajuste no "X"*/
+
+.bx-x {
+
+    padding-left: 0%;
+
+    font-size: 60px;
+
+}
+
+menu li a .bx-x {
+
+    position: absolute;
+
+    top: 0%;
+
+    left: 0%;
+
+}
+
+.bx-x {
+
+    font-size: 90px;
+
+}
+
+
+
+
+
+.element {
+
+    width: 100px;
+
+    height: 100px;
+
+
+    position: absolute;
+
+    cursor: pointer;
+
+}
+
+/* C L A S S E S */
+
+.bx-menu {
+    font-size: 40px;
+    position: fixed;
+    left: 20px;
+    margin-top: 10px;
+}
+
+.bxs-user-plus {
+    position: fixed;
+    margin-top: 10px;
+    z-index: 1;
+    top: 0%;
+    right: 0px;
+    font-size: 40px;
+}
+
+.alinharUser {}
+
+.img1 {
+    width: 80px;
+    height: 100px;
+}
+
+.alinharImg {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CLASSES DO  C O N T E I N E R*/
+.p1 {
+    color: white;
+    margin-left: 20px;
+}
+
+main {
+    /*DE OLHO AQUI*/
+
+
+    height: 300px;
+
+    width: 100%;
+    /*
+      width:1365px;
+      */
+    background-color: #8f0000;
+    transform: translate(0%, 200px);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+
+.content {
+    height: 230px;
+    /*
+      width:1350px;
+  */
+    /*DE OLHO AQUI*/
+    width: 90%;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    position: absolute;
+
+    top: 20px;
+    left: 50px;
+
+
+}
+
+.s1,
+.slide {
+    margin: 0px;
+}
+
+.navigation {
+
+    position: absolute;
+
+    bottom: 50px;
+
+    left: 0%;
+
+    transform: translate(90%);
+
+    display: flex;
+
+}
+
+p {
+    font-size: 30px;
+}
+
+.bar {
+
+    width: 18px;
+
+    height: 18px;
+
+    border-radius: 50%;
+
+    border: 2px solid white;
+
+    background-color: rgb(59, 59, 59);
+
+    margin: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    transform: translate(-100%);
+}
+
+.bar:hover {
+
+    background-color: rgb(255, 0, 0);
+
+}
+
+input {
+
+    display: none
+}
+
+.Rolls {
+
+    display: flex;
+
+    width: 500%;
+
+    height: 85%;
+
+}
+
+.slide {
+
+    padding-right: 0%;
+
+    display: flex;
+
+    transition: .4s;
+
+}
+
+.slide img {
+    border-bottom: 3px solid white;
+
+    height: 100%;
+
+    width: 25%;
+}
+
+.s1 img {
+    height: 100%;
+    width: 30%;
+}
+
+.slide img {}
+
+#roll1:checked~.s1 {
+
+    margin-left: 0;
+
+}
+
+#roll2:checked~.s1 {
+
+    margin-left: -25%;
+
+}
+
+#roll3:checked~.s1 {
+
+    margin-left: -50%;
+
+}
+
+#roll4:checked~.s1 {
+
+    margin-left: -75%;
+
+}
+
+
+
+.slide,
+.s1 {
+
+    display: flex;
+
+    height: 98%;
+
+    width: 25%;
+
+}
+
+/*MENU*/
+menu {
+    position: fixed;
+}
+
+#menu-options {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 1%;
+    list-style: none;
+    width: auto;
+    font-size: 20px;
+    padding: 0;
+    margin-top: 1%;
+    background-color: #ad0000;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+#menu-options li {
+    padding: 10px 0;
+}
+
+#menu-options a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.bx-x:focus+#menu-options {
+    display: block;
+}
+
+#menu-options:target {
+    display: block;
+}
+
+.bx-x {
+    padding-left: 0%;
+    font-size: 60px;
+}
+
+.bxs-user-plus {
+    font-size: 60px;
+}
+
+.bx.bx-menu {
+    font-size: 60px
+}
+
+/*ajuste no "X"*/
+.bx-x {
+    padding-left: 0%;
+    font-size: 60px;
+}
+
+menu li a .bx-x {
+    margin-top: -45px;
+    margin-left: -70px;
+    top: 0;
+    left: 0;
+}
+
+.bx-x {
+    font-size: 90px;
+}
+
+
+.element {
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    cursor: pointer;
+}
+
+/*FIM MENU*/
+
+/*DIV DE BAIXO*/
+.SobreO {
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 500px);
+    width: 600px;
+    background-color: #f7f7f7;
+}
+
+.p2 {
+    padding-top: 50px;
+    margin-left: 40px;
+    font-size: larger;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Vitalusus {
+    position: absolute;
+    display: flex;
+    color: #ff0000;
+    top: 130px;
+    margin-left: 410px;
+    font-size: larger;
+}
+
+.a1 {
+    font-style: normal;
+}
+
+.a2 {
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.LogoAjust img {
+    height: 170px;
+    width: 180px;
+}
+
+.LogoAjust {
+    top: 35px;
+    left: 75%;
+    transform: translate(-30%);
+    position: absolute;
+}
+
+/*Fim da DIV DE BAIXO*/
+
+
+/*COMEÇAR (TELA DE BAIXO DA LOGO)*/
+.comecar {
+    height: 300px;
+    position: absolute;
+    top: 1500px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 1200px;
+    background-color: #f7f7f7;
+
+}
+
+.ajustH1 {
+    color: #ff0000;
+    font-size: larger;
+}
+
+.p3 {
+    padding-left: 10px;
+    font-size: larger;
+}
+
+.treinadorAjust {
+    font-size: larger;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+}
+
+.treinadorAjust h1 {
+    color: #ff0000;
+}
+
+.destacar {
+    color: #ff0000;
+}
+
+.destacar2 {
+    color: #ff0000;
+}
+
+/*FIM COMEÇAR TELA DE BAIXO*/
+
+/*CODIGO ORTOGRAFIA E JOANA*/
+.cor-sobre-nós {
+    background-color: rgba(245, 9, 9, 0.63);
+    width: 50%;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    height: 600px;
+}
+
+#seta-sobre-nos {
+    padding: 30px;
+    color: white;
+    margin-right: 500px;
+    font-size: 50px;
+}
+
+#Texto-SN {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: 5px;
+}
+
+#Texto-H-SN {
+    margin-bottom: 30px;
+    margin: 30px;
+    font-size: 50px;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+#Texto-H2-SN {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: 5px;
+
+}
+
+.PlayStore img {
+    height: 35%;
+    width: 30%;
+}
+
+.PlayStore {
+    position: absolute;
+    top: 90px;
+    left: 30%;
+}
+
+.appStore img {
+    height: 40%;
+    width: 38%;
+}
+
+.appStore {
+    position: absolute;
+    top: 170px;
+    left: 30%;
+}
+
+/*FIM MENU*/
+.cor-sobre-nós {
+    background-color: rgba(245, 9, 9, 0.63);
+    width: 50%;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    height: 600px;
+}
+
+#seta-sobre-nos {
+    padding: 30px;
+    color: white;
+    margin-right: 500px;
+    font-size: 50px;
+}
+
+#Texto-SN {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: 5px;
+}
+
+#Texto-H-SN {
+    margin-bottom: 30px;
+    margin: 30px;
+    font-size: 50px;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+#Texto-H2-SN {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: 5px;
+
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="/Controller-CAD-LOG.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="shortcut icon" href="/logo.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Perfil dos Treinadores</title>
+    <style type="text/css">
+        body {
+            padding: 50px;
+            text-align: center;
+            background-color: #000000; 
+            color: #FFFFFF; 
+        }
+        table {
+            box-shadow: 0 0 4px #FA8072; 
+            border-collapse: collapse; 
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #FFFFFF; 
+            padding: 8px; 
+            text-align: center; 
+            background-color:#ff0000;
+        }
+        th {
+            background-color: #ff0000; 
+        }
+        a {
+            border: solid;
+            color: #fa8072; 
+        }
+        header {
+            text-align: left;
+            
+        }
+    </style>
+</head>
+<body>
+    <header class="listaHeader">
+        <br/>
+        <a class="botao" target="_self" th:href="@{/Vitalusus-2h/Clientes/index}"><i></i>Voltar</a>
+        <a class="botao" target="_self" th:href="@{/Vitalusus-2h/Clientes/cadastrar}"><i></i>Novo Cliente</a>
+    </header>
+            <h2 class="listaH2">Usuários</h2>
+           
+            <table class="table table-striped">
+                <thead>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Status</th>
+                    <th>Data de Nascimento</th>
+                    <th>E-Mail</th>
+                    <th>Senha</th>
+                    <th>Telefone</th>
+                    <th>Tipo de Pessoa</th>
+                    <th>Gênero</th>
+                </thead>
+                <tbody>
+                    <tr th:each="usuario: ${usuarios}" >
+                        <td th:text="${usuario.id}"></td>
+                        <td th:text="${usuario.nome}"></td>
+                        <td th:text="${usuario.statusUsuario}"></td>
+                        <td th:text="${usuario.dataNasc}"></td>
+                        <td th:text="${usuario.email}"></td>
+                        <td th:text="${usuario.senha}"></td>
+                        <td th:text="${usuario.telefone}"></td>
+                        <td th:text="${usuario.tipoPessoa}"></td>
+                        <td th:text="${usuario.genero}"></td>
+                        
+                        <td>
+                        <a class="editar-deletar" th:href="@{/edit/{cliente.id}(id=${usuario.id})}"><i class='bx bxs-message-alt-edit'></i></a>
+                        <a class="editar-deletar" th:href="@{/deletar/{cliente.id}(id=${usuario.id})}"><i class='bx bxs-message-alt-x' ></i></a>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+</body>
+</html>

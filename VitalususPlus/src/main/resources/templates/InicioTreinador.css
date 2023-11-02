@@ -1,0 +1,489 @@
+/*CODIGOS PRIMARIOS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+body,
+html {
+    height: 140%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body {
+    background-image: url("background.jpeg");
+    background: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+menu {
+
+    padding: 0;
+    margin: 0;
+    margin-left: 0;
+    z-index: 1;
+}
+
+header {
+    position: fixed;
+    padding: 0;
+    top:0;
+    width:100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(41, 0, 0) 35%, rgb(255, 0, 0) 100%);
+    box-shadow: 0 0 4px black;
+    border-radius: 4px;
+    z-index:1;
+    opacity:0.9;
+}
+
+/*
+.header2{
+    background-color: black;
+    z-index: 1;
+    position: relative;
+}
+*/
+
+
+/*C L A S S E S*/
+
+.bx-menu {
+    font-size: 40px;
+    position: fixed;
+    left: 20px;
+    margin-top: 10px;
+}
+
+.bxs-user-plus {
+    position: fixed;
+    margin-top: 10px;
+    z-index: 1;
+    top: 0%;
+    right: 0px;
+    font-size: 40px;
+}
+
+.img1 {
+    width: 90px;
+    height: 100px;
+}
+
+.alinharImg {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CLASSES DO  C O N T E I N E R*/
+.p1 {
+    color: white;
+    margin-left: 20px;
+}
+
+.main {
+    /*DE OLHO AQUI*/
+    
+
+    height: 350px;
+
+    width: 100%;
+    /*
+    width:1365px;
+    */
+    background-color: #8f0000;
+    transform: translate(0%, 200px);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+
+.content {
+    height: 260px;
+    /*
+    width:1350px;
+*/
+    /*DE OLHO AQUI*/
+    width: 87%;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    position: absolute;
+
+    top: 20px;
+    left: 50px;
+
+
+}
+
+.s1,
+.slide {
+    margin: 0px;
+}
+
+.navigation {
+
+    position: absolute;
+
+    bottom: 50px;
+
+    left: 0%;
+
+    transform: translate(80%);
+
+    display: flex;
+
+}
+.p1,.p2,.p3,.p4{
+    font-size:30px;
+
+}
+.p4{
+    margin-top: -18px;
+}
+
+.bar {
+
+    width: 18px;
+
+    height: 18px;
+
+    border-radius:50%;
+
+    border:2px solid white ;
+
+    background-color: rgb(59, 59, 59);
+
+    margin: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    transform: translate(-100%);
+}
+
+.bar:hover {
+
+    background-color: rgb(255, 0, 0);
+
+}
+
+input {
+
+    display: none
+}
+
+.Rolls {
+
+    display: flex;
+
+    width: 500%;
+
+    height: 85%;
+
+}
+
+.slide {
+
+    padding-right: 0%;
+
+    display: flex;
+
+    transition: .4s;
+
+}
+
+.slide img {
+    border-bottom: 3px solid white;
+
+    height: 100%;
+
+    width: 25%;
+}
+
+.s1 img {
+    height: 100%;
+    width: 25%;
+}
+
+#roll1:checked~.s1 {
+
+    margin-left: 0;
+
+}
+
+#roll2:checked~.s1 {
+
+    margin-left: -25%;
+
+}
+
+#roll3:checked~.s1 {
+
+    margin-left: -50%;
+
+}
+
+#roll4:checked~.s1 {
+
+    margin-left: -75%;
+
+}
+
+
+
+.slide,
+.s1 {
+
+    display: flex;
+
+    height: 98%;
+
+    width: 25%;
+
+}
+
+/*MENU*/
+menu {
+    position: fixed;
+}
+
+#menu-options {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 1%;
+    list-style: none;
+    width: auto;
+    font-size: 20px;
+    padding: 0;
+    margin-top: 1%;
+    background-color: #ad0000;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+#menu-options li {
+    padding: 10px 0;
+}
+
+#menu-options a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.bx-x:focus+#menu-options {
+    display: block;
+}
+
+#menu-options:target {
+    display: block;
+}
+
+.bx-x {
+    padding-left: 0%;
+    font-size: 60px;
+}
+.bxs-user-plus{
+    font-size:60px;
+}
+.bx.bx-menu{
+    font-size:60px
+}
+/*ajuste no "X"*/
+.bx-x {
+    padding-left: 0%;
+    font-size: 60px;
+}
+menu li a .bx-x{
+    margin-top: -45px;
+    margin-left: -70px;
+    top:0;
+    left:0;
+}
+.bx-x{
+    font-size: 90px;
+}
+
+
+.element {
+    width: 100px;
+    height: 100px;
+    
+    position: absolute;
+    cursor: pointer;
+  }
+  /*FIM MENU*/
+
+/*DIV DE BAIXO*/
+.SobreO {
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 500px);
+    width: 600px;
+    background-color: #f7f7f7;
+}
+
+.p2 {
+    padding-top: 50px;
+    margin-left: 40px;
+    font-size: larger;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Vitalusus {
+    position: absolute;
+    display: flex;
+    color: #ff0000;
+    top: 130px;
+    margin-left: 410px;
+    font-size: larger;
+}
+
+.a1 {
+    font-style: normal;
+}
+
+.a2 {
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.LogoAjust img {
+    height: 170px;
+    width: 180px;
+}
+
+.LogoAjust {
+    top: 35px;
+    left: 75%;
+    transform: translate(-30%);
+    position: absolute;
+}
+/*Fim da DIV DE BAIXO*/
+
+
+/*COMEÇAR (TELA DE BAIXO DA LOGO)*/
+.comecar {
+    height: 300px;
+    position: absolute;
+    top: 1500px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 1200px;
+    background-color: #f7f7f7;
+
+}
+
+.ajustH1 {
+    margin-top: -12px;
+    color: #ff0000;
+    font-size: 28px;
+
+}
+
+.p3 {
+    padding-left: 10px;
+    font-size: larger;
+}
+
+.treinadorAjust {
+    
+    position: absolute;
+    top: 0px;
+    left: 60%;
+}
+
+.treinadorAjust h1 {
+    font-size: 50px;
+    color: #ff0000;
+}
+
+.destacar {
+    color: #ff0000;
+}
+
+.destacar2 {
+    color: #ff0000;
+}
+/*FIM COMEÇAR TELA DE BAIXO*/
+
+/*CODIGO ORTOGRAFIA E JOANA*/
+.cor-sobre-nós{
+    background-color: rgba(245, 9, 9, 0.63);
+    width: 50%;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-top: 100px ;
+    margin-bottom: 40px;
+    height: 600px;
+  }
+
+#seta-sobre-nos{
+    padding: 30px;
+    color: white;
+    margin-right: 500px;
+    font-size: 50px;
+}
+#Texto-SN{
+    margin-top:60px;
+    text-align: center;
+    font-size: 32px;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: 5px;
+}
+#Texto-H-SN{
+    margin-bottom: 30px;
+    margin: 30px;
+    font-size: 50px;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    color: white;
+}
+#Texto-H2-SN{
+    margin-top:60px;
+    text-align: center;
+    font-size: 32px;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: 5px;
+    
+}
+.PlayStore img{
+height:35%;
+width:30%;
+}
+.PlayStore{
+    position:absolute;
+    top:110px;
+    left:29%;
+}
+.appStore img{
+    height:45%;
+width:38%;
+}
+.appStore{
+    position:absolute;
+    top:170px;
+    left:29%;
+}
