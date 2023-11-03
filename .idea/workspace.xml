@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a637ee9-f0a6-42ad-b95a-a74502089a41" name="Changes" comment="Otto -- Criando repositório git do novo vitalusus">
-      <change afterPath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/model/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/model/Treinador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/model/Usuario.java" afterDir="false" />
+    <list default="true" id="5a637ee9-f0a6-42ad-b95a-a74502089a41" name="Changes" comment="Otto -- Coloquei os relacionamentos entre as classes Usuario.ja&#10;, Treinador.java e Admin.java">
+      <change afterPath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/repository/AdminRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/repository/TreinadorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/controller/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/model/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/model/Treinador.java" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/model/Treinador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/repository/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/repository/UsuarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/clientes.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/clientes.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -100,7 +105,7 @@
       <updated>1698882080598</updated>
       <workItem from="1698882085656" duration="119000" />
       <workItem from="1698882319317" duration="13128000" />
-      <workItem from="1698924863947" duration="10758000" />
+      <workItem from="1698924863947" duration="14471000" />
     </task>
     <task id="LOCAL-00001" summary="Otto -- Criando repositório git do novo vitalusus">
       <created>1698942223601</created>
@@ -109,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698942223601</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Otto -- Coloquei os relacionamentos entre as classes Usuario.ja&#10;, Treinador.java e Admin.java">
+      <created>1699008793458</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699008793458</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +129,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Otto -- Criando repositório git do novo vitalusus" />
-    <option name="LAST_COMMIT_MESSAGE" value="Otto -- Criando repositório git do novo vitalusus" />
+    <MESSAGE value="Otto -- Coloquei os relacionamentos entre as classes Usuario.ja&#10;, Treinador.java e Admin.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Otto -- Coloquei os relacionamentos entre as classes Usuario.ja&#10;, Treinador.java e Admin.java" />
   </component>
 </project>

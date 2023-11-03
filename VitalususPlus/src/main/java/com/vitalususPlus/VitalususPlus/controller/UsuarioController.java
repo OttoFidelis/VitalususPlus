@@ -1,14 +1,18 @@
 package com.vitalususPlus.VitalususPlus.controller;
 
+import com.vitalususPlus.VitalususPlus.model.Admin;
+import com.vitalususPlus.VitalususPlus.model.Treinador;
 import com.vitalususPlus.VitalususPlus.model.Usuario;
+import com.vitalususPlus.VitalususPlus.repository.AdminRepository;
+import com.vitalususPlus.VitalususPlus.repository.TreinadorRepository;
 import com.vitalususPlus.VitalususPlus.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-//localhost:8080/Vitalusus-2h/Clientes/listaClientes -->
-//--> endereço para adiantar para quem for entrar na página para ver se tá tudo certo na parte web
+//localhost:8080/Vitalusus-2h/Clientes/listaClientes --> -->
+//--> --> endereço para adiantar para quem for entrar na página para ver se tá tudo certo na parte web ;)
 
 //Começo da classe
 @Controller
@@ -19,6 +23,14 @@ public class UsuarioController {
     //negócio que liga dá acesso ao repository do usuário
     @Autowired
     private UsuarioRepository usuarioRepository;
+
+    //negócio que liga dá acesso ao repository do treinador
+    @Autowired
+    private TreinadorRepository treinadorRepository;
+
+    //negócio que liga dá acesso ao repository do administrador
+    @Autowired
+    private AdminRepository adminRepositoryy;
 
     //código que cria a localiação da página index
     @GetMapping("/index")
@@ -34,7 +46,7 @@ public class UsuarioController {
 
     //código que coloca os registros digitados pelo usuário ao cadastrar no banco de dados
     @PostMapping("/cadastrar")
-    public String enviarCadastro(Usuario usuario){
+    public String enviarCadastro(Usuario usuario, Treinador treinador, Admin admin){
         usuario.setStatusUsuario("ativo");
         usuarioRepository.save(usuario);
         return "redirect:/Vitalusus-2h/Clientes/clienteSucesso";

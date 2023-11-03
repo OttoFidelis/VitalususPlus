@@ -5,7 +5,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
 @Entity
-public class Admin extends Usuario{
+public class Admin{
 
     private static final long serialVersionUID = 1L;
 
@@ -17,12 +17,10 @@ public class Admin extends Usuario{
     @OneToOne
     private Usuario usuario;
 
-    @Override
     public Long getId() {
         return id;
     }
 
-    @Override
     public void setId(Long id) {
         this.id = id;
     }

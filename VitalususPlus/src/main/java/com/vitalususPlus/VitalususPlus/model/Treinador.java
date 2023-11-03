@@ -3,7 +3,7 @@ package com.vitalususPlus.VitalususPlus.model;
 import javax.persistence.*;
 
 @Entity
-public class Treinador extends Usuario{
+public class Treinador{
 
     private static final long serialVersionUID = 1L;
 
@@ -23,12 +23,10 @@ public class Treinador extends Usuario{
         this.usuario = usuario;
     }
 
-    @Override
     public Long getId() {
         return id;
     }
 
-    @Override
     public void setId(Long id) {
         this.id = id;
     }
