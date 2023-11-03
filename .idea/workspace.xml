@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a637ee9-f0a6-42ad-b95a-a74502089a41" name="Changes" comment="Otto -- Criando repositório git do novo vitalusus" />
+    <list default="true" id="5a637ee9-f0a6-42ad-b95a-a74502089a41" name="Changes" comment="Otto -- Criando repositório git do novo vitalusus">
+      <change afterPath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/model/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/model/Treinador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/model/Usuario.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,7 +50,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "frontend",
     "jdk.selected.JAVA_MODULE": "openjdk-20",
     "last_opened_file_path": "C:/Users/yuser/OneDrive/Área de Trabalho/Diretórios/VitalususPlus",
     "node.js.detected.package.eslint": "true",
@@ -96,7 +100,7 @@
       <updated>1698882080598</updated>
       <workItem from="1698882085656" duration="119000" />
       <workItem from="1698882319317" duration="13128000" />
-      <workItem from="1698924863947" duration="9526000" />
+      <workItem from="1698924863947" duration="10758000" />
     </task>
     <task id="LOCAL-00001" summary="Otto -- Criando repositório git do novo vitalusus">
       <created>1698942223601</created>

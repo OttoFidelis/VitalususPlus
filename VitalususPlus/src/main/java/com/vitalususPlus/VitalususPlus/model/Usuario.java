@@ -1,9 +1,6 @@
 package com.vitalususPlus.VitalususPlus.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
@@ -20,6 +17,28 @@ public class Usuario implements Serializable {
     private String dataNasc;
     private String statusUsuario;
     private String tipoPessoa;
+
+    @OneToOne
+    private Treinador treinador;
+
+    @OneToOne
+    private Admin admin;
+
+    public Treinador getTreinador() {
+        return treinador;
+    }
+
+    public void setTreinador(Treinador treinador) {
+        this.treinador = treinador;
+    }
+
+    public Admin getAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(Admin admin) {
+        this.admin = admin;
+    }
 
     public Long getId() {
         return id;
