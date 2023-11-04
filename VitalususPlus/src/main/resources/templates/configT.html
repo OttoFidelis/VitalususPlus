@@ -29,15 +29,15 @@
     </div>
       <ul class="menu-options"><br/><br/><br/>
           <li><span class="material-symbols-outlined">settings</span>
-          <a class="menu-a"th:href="@{/Vitalusus-2h/Clientes/configT}" target="_self">Configuração</a>
+          <a class="menu-a"th:href="@{/Vitalusus-2h/Clientes/configT/{id}(id=${usuario.id})}" target="_self">Configuração</a>
           </li>
 
           <li><span class="material-symbols-outlined">library_add</span>
-              <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/bibliotecaVideos}">Seus Vídeos</a>
+              <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/bibliotecaVideos/{id}(id=${usuario.id})}">Seus Vídeos</a>
           </li>
 
           <li><span class="material-symbols-outlined">trending_up</span>
-              <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/Estatisticas}">Estatísticas</a>
+              <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/Estatisticas/{id}(id=${usuario.id})}">Estatísticas</a>
           </li>
 
           <li><span class="material-symbols-outlined">support_agent</span>
@@ -45,7 +45,7 @@
           </li>
 
           <li><span class="material-symbols-outlined">info</span>
-              <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/Sobre-nos}">Sobre nós</a>
+              <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/Sobre-nos/{id}(id=${usuario.id})}">Sobre nós</a>
           </li>
       </ul>
     </nav>
@@ -69,7 +69,7 @@
     <!-- Fazer um input SLIDER -->
     <!-- Acho melhor fazer um id para os buttons abaixo. -->
     <a class="botao-a"><button class="botao" id="Botaoconfig">Idioma</button><br/></a>
-    <a th:href="@{/Vitalusus-2h/Clientes/Sobre-nos}" class="botao-a"><button class="botao" id="Botaoconfig">Sobre Nós</button><br/></a>
+    <a th:href="@{/Vitalusus-2h/Clientes/Sobre-nos/{id}(id=${usuario.id})}" class="botao-a"><button class="botao" id="Botaoconfig">Sobre Nós</button><br/></a>
     <a th:href="@{/Vitalusus-2h/Clientes/user/{id}(id=${usuario.id})}" class="botao-a"><button class="botao" id="Botaoconfig">Conta</button><br/></a>
     <a th:href="@{/Vitalusus-2h/Clientes/confirmarDeletar}" class="botao-a"><button class="botao" id="Botaoconfig">Deletar a Sua Conta</button></a>
   </form>

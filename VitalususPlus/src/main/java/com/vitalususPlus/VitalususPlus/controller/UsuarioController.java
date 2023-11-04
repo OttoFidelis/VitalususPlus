@@ -134,24 +134,77 @@ public class UsuarioController {
         return "confirmarEditar";
     }
 
+    @GetMapping("/editar/{id}")
+    public ModelAndView entrarEditar(@PathVariable("id") Long id){
+        ModelAndView mv = new ModelAndView("editarSuaConta");
+        Usuario usuario = usuarioRepository.findById(id);
+        mv.addObject("usuario",usuario);
+        return mv;
+    }
     @GetMapping("/editar{id}")
-    public String entrarEditar(){
-        return "editarSuaConta";
+    public ModelAndView editar(@PathVariable("id") Long id){
+        ModelAndView mv = new ModelAndView("clienteSucesso");
+        Usuario usuario = usuarioRepository.findById(id);
+        return mv;
+    }
+    @PostMapping("/editar{id}")
+    public ModelAndView editar(Usuario usuario){
+        ModelAndView mv = new ModelAndView();
+        usuario.setStatusUsuario("ativo");
+        usuarioRepository.save(usuario);
+        mv.setViewName("redirect:/Vitalusus-2h/Clientes/login");
+        return mv;
     }
 
-    @PostMapping("/confirmarEditar")
-    public String entrarNoEditar(@ModelAttribute Usuario usuario){
-        String page = "redirect:/Vitalusus-2h/Clientes/confirmarEditar";
 
-        Usuario usuarioDb = usuarioRepository.findByLogin(usuario.getEmail(), usuario.getSenha());
-        if (usuarioDb !=null && usuario.getSenha().equals(usuarioDb.getSenha())&&usuario.getEmail().equals(usuario.getEmail())){
-            page = "redirect:/Vitalusus-2h/Clientes/editar{id}";
+    @PostMapping("/confirmarEditar")
+    public ModelAndView entrarNoEditar(@ModelAttribute Usuario usuario){
+        ModelAndView page = new ModelAndView();
+        usuario = usuarioRepository.findByLogin(usuario.getEmail(), usuario.getSenha());
+        if (usuario ==null) {
+            page.setViewName("confirmarEditar");
         }
+        else{
+            page.setViewName("EditarSuaConta");
+        }
+        page.addObject("usuario",usuario);
         return page;
     }
     @GetMapping("/user/{id}")
     public ModelAndView user(@PathVariable("id") Long id){
         ModelAndView mv = new ModelAndView("user");
+        Usuario usuario = usuarioRepository.findById(id);
+        mv.addObject("usuario",usuario);
+        return mv;
+    }
+    @GetMapping("/esqueceuSenha)")
+    public String esqueceuSenha(){
+        return "esqueceuSenha";
+    }
+    @GetMapping("/Estatisticas/{id}")
+    public ModelAndView estatisticas(@PathVariable("id") Long id){
+        ModelAndView mv = new ModelAndView("Estatisticas");
+        Usuario usuario = usuarioRepository.findById(id);
+        mv.addObject("usuario",usuario);
+        return mv;
+    }
+    @GetMapping("/publicar/{id}")
+    public ModelAndView publicar(@PathVariable("id") Long id){
+        ModelAndView mv = new ModelAndView("publicar");
+        Usuario usuario = usuarioRepository.findById(id);
+        mv.addObject("usuario",usuario);
+        return mv;
+    }
+    @GetMapping("/Sobre-nos/{id}")
+    public ModelAndView sobreNos(@PathVariable("id") Long id){
+        ModelAndView mv = new ModelAndView("Sobre-nos");
+        Usuario usuario = usuarioRepository.findById(id);
+        mv.addObject("usuario",usuario);
+        return mv;
+    }
+    @GetMapping("/bibliotecaVideos/{id}")
+    public ModelAndView biblioteca(@PathVariable("id") Long id){
+        ModelAndView mv = new ModelAndView("bibliotecaVideos");
         Usuario usuario = usuarioRepository.findById(id);
         mv.addObject("usuario",usuario);
         return mv;

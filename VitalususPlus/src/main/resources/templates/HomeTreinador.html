@@ -79,13 +79,13 @@
 
   <div class="AtributBotton">
     <div class="alignSeusVideos">
-      <a href=/Vitalusus-2h/Clientes/bibliotecaVideos><button class="home-txt"> Seus videos</button></a>
+      <a th:href="@{/Vitalusus-2h/Clientes/bibliotecaVideos/{id}(id=${usuario.id})}"><button class="home-txt"> Seus videos</button></a>
     </div>
     <div class="alingCriarVideo">
-      <a th:href="@{/Vitalusus-2h/Clientes/publicar}"><button class="home-txt"> Criar vídeo aula</button></a>
+      <a th:href="@{/Vitalusus-2h/Clientes/publicar/{id}(id=${usuario.id})}"><button class="home-txt"> Criar vídeo aula</button></a>
     </div>
     <div class="alignEstatisticas">
-    <a th:href="@{/Vitalusus-2h/Clientes/Estatisticas}"><button class="home-txt">Suas Estatísticas </button></a>
+    <a th:href="@{/Vitalusus-2h/Clientes/Estatisticas/{id}(id=${usuario.id})}"><button class="home-txt">Suas Estatísticas </button></a>
   </div>
 </div>
 <footer class="homefooter">.</footer>

@@ -83,9 +83,9 @@
       </header>
 <div class="formContainer">
  
-  <form form method="post"  onsubmit="return Validar()" class="form">
+  <form form method="post" th:action="@{/Vitalusus-2h/Clientes/editar{id}(id=${usuario.id})}"  onsubmit="return Validar()" class="form" th:object="${usuario}">
 
-    <input type="hidden" name="_method" value="PUT"/>
+    <input type="hidden" th:field="*{id}"/>
     <a th:href="@{/Vitalusus-2h/Clientes/user/{id}(id=${usuario.id})}" class="linkseta"  target="_self"><i class='bx bx-left-arrow-circle'
       id="seta"></i></a>
     <div class="txtcad">
@@ -93,15 +93,25 @@
     </div>
     <div class="alignCad">
       <label for="nome"></label>
-      <strong>NOME COMPLETO:</strong><input type="text" class="input" name="nome"
-        required="required" id="nome">
+      <strong>NOME COMPLETO:</strong><input type="text" readonly="readonly" class="input" name="nome"
+        required="required" id="nome" th:field="*{nome}">
       <br />
+      <strong>GÊNERO:</strong>
+      <select  class="input" readonly="readonly" required="required" name="genero" th:field="*{genero}">
+        <option value="masculino" id="opttre">Masculino</option>
+        <option value="Feminino" id="opttre">Feminino</option>
+        <option value="outro/prefiro não dizer" id="opttre">Outro/prefiro não dizer</option>
+      </select><br/>
       <label for="email"></label>
-      <strong>EMAIL</strong> <input type="email" class="input" name="email"
+      <strong>EMAIL</strong> <input type="email"  class="input" name="email" th:field="*{email}"
         required="required" id="email">
       <br />
+      <label for="data"></label>
+      <strong>DATA DE NASCIMENTO:</strong> <input type="date" readonly="readonly" class="input" th:field="*{dataNasc}"
+        name="dataNasc" min="" maxlength="" required="required" id="data">
+      <br />
       <label for="telefone"></label>
-      <strong>TELEFONE:</strong> <input type="tel" class="input" name="telefone" min=""
+      <strong>TELEFONE:</strong> <input type="tel" class="input" name="telefone" min="" th:field="*{telefone}"
         maxlength="" required="required" id="telefone">
       <br />
 
@@ -111,13 +121,18 @@
       <br />
 
       <label for="txt-consen"></label>
-      <strong>CONFIRMAR NOVA SENHA:</strong> <input type="password" class="input"name="senha-confirm" min="" maxlength=""
+      <strong>CONFIRMAR SENHA:</strong> <input type="password" class="input"name="senha-confirm" min="" maxlength=""
         required="required" id="txtconsen">
       <br />
 
+      <strong>TIPO DE PESSOA:</strong>
+      <select  class="input" required="required" readonly="readonly" name="tipoPessoa" th:field="*{tipoPessoa}"> 
+        <option value="Treinador(a)" id="opttre">Treinador(a)</option>
+      </select>
       <br />
       <br />
     </div>
+
 
     <div class="bt">
       <input class="botao" type="submit" value="Confirmar" id="Botao">

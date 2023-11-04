@@ -81,7 +81,7 @@
                         <td th:text="${usuario.genero}"></td>
                         
                         <td>
-                        <a class="editar-deletar" th:href="@{/Vitalusus-2h/Clientes/editar{id}(id=${usuario.id})}"><i class='bx bxs-message-alt-edit'></i></a>
+                        <a class="editar-deletar" th:href="@{/Vitalusus-2h/Clientes/editar/{id}(id=${usuario.id})}"><i class='bx bxs-message-alt-edit'></i></a>
                         <a class="editar-deletar" th:href="@{/Vitalusus-2h/Clientes/deletar{id}(id=${usuario.id})}"><i class='bx bxs-message-alt-x' ></i></a>
                     </td>
                     </tr>

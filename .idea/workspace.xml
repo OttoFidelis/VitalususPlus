@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a637ee9-f0a6-42ad-b95a-a74502089a41" name="Changes" comment="Otto -- Até que o código tá bunitin, de novo">
+    <list default="true" id="5a637ee9-f0a6-42ad-b95a-a74502089a41" name="Changes" comment="Otto -- Agora o site tá funcionando como se fosse um site de verdade, quase">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/controller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/Estatisticas.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/Estatisticas.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/HomeTreinador.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/HomeTreinador.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/LOGIN.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/LOGIN.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/Sobre-nos.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/Sobre-nos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/bibliotecaVideos.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/bibliotecaVideos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/clienteSucesso.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/clienteSucesso.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/clienteSucessoEditar.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/clienteSucessoEditar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/clientes.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/clientes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/configT.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/configT.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/confirmarDeletar.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/confirmarDeletar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/confirmarEditar.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/confirmarEditar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/editarSuaConta.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/editarSuaConta.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/publicar.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/publicar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/user.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,35 +46,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "frontend",
-    "jdk.selected.JAVA_MODULE": "openjdk-20",
-    "last_opened_file_path": "C:/Users/yuser/OneDrive/Área de Trabalho/Diretórios/VitalususPlus",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "c539e073e117e6ab19d7ce74b9205690",
-    "two.files.diff.last.used.folder": "C:/Users/yuser/OneDrive/Área de Trabalho/Diretórios/VitalususPlus/VitalususPlus",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;frontend&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-20&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yuser/OneDrive/Área de Trabalho/Diretórios/VitalususPlus&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;c539e073e117e6ab19d7ce74b9205690&quot;,
+    &quot;two.files.diff.last.used.folder&quot;: &quot;C:/Users/yuser/OneDrive/Área de Trabalho/Diretórios/VitalususPlus/VitalususPlus&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlserver.localdb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver.localdb&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
@@ -112,7 +105,8 @@
       <updated>1698882080598</updated>
       <workItem from="1698882085656" duration="119000" />
       <workItem from="1698882319317" duration="13128000" />
-      <workItem from="1698924863947" duration="26989000" />
+      <workItem from="1698924863947" duration="30067000" />
+      <workItem from="1699135703987" duration="3693000" />
     </task>
     <task id="LOCAL-00001" summary="Otto -- Criando repositório git do novo vitalusus">
       <created>1698942223601</created>
@@ -142,7 +136,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699089321819</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Otto -- Agora o site tá funcionando como se fosse um site de verdade, quase">
+      <created>1699102443727</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699102443727</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Otto -- Agora o site tá funcionando como se fosse um site de verdade, quase">
+      <created>1699102473922</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699102473922</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +161,7 @@
     <MESSAGE value="Otto -- Coloquei os relacionamentos entre as classes Usuario.ja&#10;, Treinador.java e Admin.java" />
     <MESSAGE value="Otto -- Até que o código tá bunitin" />
     <MESSAGE value="Otto -- Até que o código tá bunitin, de novo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Otto -- Até que o código tá bunitin, de novo" />
+    <MESSAGE value="Otto -- Agora o site tá funcionando como se fosse um site de verdade, quase" />
+    <option name="LAST_COMMIT_MESSAGE" value="Otto -- Agora o site tá funcionando como se fosse um site de verdade, quase" />
   </component>
 </project>
