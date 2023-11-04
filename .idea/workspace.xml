@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a637ee9-f0a6-42ad-b95a-a74502089a41" name="Changes" comment="Otto -- Agora o site tá funcionando como se fosse um site de verdade, quase">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5a637ee9-f0a6-42ad-b95a-a74502089a41" name="Changes" comment="Otto -- Agora o crud funciona">
       <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/controller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/HomeTreinador.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/HomeTreinador.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/clientes.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/clientes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/configT.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/configT.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/confirmarEditar.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/confirmarEditar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/editarSuaConta.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/editarSuaConta.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/user.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +99,7 @@
       <workItem from="1698882085656" duration="119000" />
       <workItem from="1698882319317" duration="13128000" />
       <workItem from="1698924863947" duration="30067000" />
-      <workItem from="1699135703987" duration="3693000" />
+      <workItem from="1699135703987" duration="4057000" />
     </task>
     <task id="LOCAL-00001" summary="Otto -- Criando repositório git do novo vitalusus">
       <created>1698942223601</created>
@@ -150,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699102473922</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Otto -- Agora o crud funciona">
+      <created>1699139672179</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699139672179</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +162,7 @@
     <MESSAGE value="Otto -- Até que o código tá bunitin" />
     <MESSAGE value="Otto -- Até que o código tá bunitin, de novo" />
     <MESSAGE value="Otto -- Agora o site tá funcionando como se fosse um site de verdade, quase" />
-    <option name="LAST_COMMIT_MESSAGE" value="Otto -- Agora o site tá funcionando como se fosse um site de verdade, quase" />
+    <MESSAGE value="Otto -- Agora o crud funciona" />
+    <option name="LAST_COMMIT_MESSAGE" value="Otto -- Agora o crud funciona" />
   </component>
 </project>

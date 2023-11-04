@@ -72,6 +72,7 @@ public class UsuarioController {
     public String showFormLogin(){
         return "LOGIN";
     }
+
     //código que verifica se o login e senha que o usuário digitou são válidos
     @PostMapping("/login")
     public ModelAndView efetuarLogin(@ModelAttribute Usuario usuario){
@@ -95,6 +96,7 @@ public class UsuarioController {
         mv.addObject("usuario",usuario);
         return mv;
     }
+
     //código que cria a localiação da página configT
     @GetMapping("/configT/{id}")
     public ModelAndView config(@PathVariable("id") Long id){
@@ -128,12 +130,13 @@ public class UsuarioController {
         }
         return page;
     }
-
+    //código que cria a localização da página confirmarEditar
     @GetMapping("/confirmarEditar")
     public String confirmarEditar(){
         return "confirmarEditar";
     }
 
+    //código que cria a localização da página editar
     @GetMapping("/editar/{id}")
     public ModelAndView entrarEditar(@PathVariable("id") Long id){
         ModelAndView mv = new ModelAndView("editarSuaConta");
@@ -141,12 +144,16 @@ public class UsuarioController {
         mv.addObject("usuario",usuario);
         return mv;
     }
+
+    //código que cria a localização da página editar que executa método put
     @GetMapping("/editar{id}")
     public ModelAndView editar(@PathVariable("id") Long id){
         ModelAndView mv = new ModelAndView("clienteSucesso");
         Usuario usuario = usuarioRepository.findById(id);
         return mv;
     }
+
+    //código que edita o usuário e seta ele de novo como ativo, porque se não fizer isso, o statusUsuario fica nulo e ninguém quer que ele fique nulo
     @PostMapping("/editar{id}")
     public ModelAndView editar(Usuario usuario){
         ModelAndView mv = new ModelAndView();
@@ -156,7 +163,7 @@ public class UsuarioController {
         return mv;
     }
 
-
+    //Código que verifica se o email e senha estão certos na página confirmarEditar, funciona igual o login, basicamente
     @PostMapping("/confirmarEditar")
     public ModelAndView entrarNoEditar(@ModelAttribute Usuario usuario){
         ModelAndView page = new ModelAndView();
@@ -170,6 +177,8 @@ public class UsuarioController {
         page.addObject("usuario",usuario);
         return page;
     }
+
+    //código que cria a localização da página user
     @GetMapping("/user/{id}")
     public ModelAndView user(@PathVariable("id") Long id){
         ModelAndView mv = new ModelAndView("user");
@@ -177,10 +186,14 @@ public class UsuarioController {
         mv.addObject("usuario",usuario);
         return mv;
     }
+
+    //código que cria a localização da página esqueceuSenha
     @GetMapping("/esqueceuSenha)")
     public String esqueceuSenha(){
         return "esqueceuSenha";
     }
+
+    //código que cria a localização da página estatisticas
     @GetMapping("/Estatisticas/{id}")
     public ModelAndView estatisticas(@PathVariable("id") Long id){
         ModelAndView mv = new ModelAndView("Estatisticas");
@@ -188,6 +201,8 @@ public class UsuarioController {
         mv.addObject("usuario",usuario);
         return mv;
     }
+
+    //código que cria a localização da página publicar
     @GetMapping("/publicar/{id}")
     public ModelAndView publicar(@PathVariable("id") Long id){
         ModelAndView mv = new ModelAndView("publicar");
@@ -195,6 +210,8 @@ public class UsuarioController {
         mv.addObject("usuario",usuario);
         return mv;
     }
+
+    //código que cria a localização da página sobre nos
     @GetMapping("/Sobre-nos/{id}")
     public ModelAndView sobreNos(@PathVariable("id") Long id){
         ModelAndView mv = new ModelAndView("Sobre-nos");
@@ -202,6 +219,8 @@ public class UsuarioController {
         mv.addObject("usuario",usuario);
         return mv;
     }
+
+    //código que cria a localização da página bibliotecaVideos
     @GetMapping("/bibliotecaVideos/{id}")
     public ModelAndView biblioteca(@PathVariable("id") Long id){
         ModelAndView mv = new ModelAndView("bibliotecaVideos");
