@@ -70,33 +70,92 @@ public class UsuarioController {
     //código que cria a localiação da página login
     @GetMapping("/login")
     public String showFormLogin(){
-        return "login";
+        return "LOGIN";
     }
     //código que verifica se o login e senha que o usuário digitou são válidos
     @PostMapping("/login")
-    public String efetuarLogin(@ModelAttribute Usuario usuario){
-        String page = "redirect:/Vitalusus-2h/Clientes/login";
-
-        Usuario usuarioDb = usuarioRepository.findByLogin(usuario.getEmail(), usuario.getSenha());
-        if (usuarioDb !=null && usuario.getSenha().equals(usuarioDb.getSenha())&&usuario.getEmail().equals(usuario.getEmail())){
-            page = "redirect:/Vitalusus-2h/Clientes/HomeTreinador";
+    public ModelAndView efetuarLogin(@ModelAttribute Usuario usuario){
+        ModelAndView page = new ModelAndView();
+        usuario = usuarioRepository.findByLogin(usuario.getEmail(), usuario.getSenha());
+        if (usuario ==null) {
+            page.setViewName("LOGIN");
         }
+        else{
+            page.setViewName("HomeTreinador");
+        }
+        page.addObject("usuario",usuario);
         return page;
     }
 
     //código que cria a localiação da página homeTreinaodor
-    @RequestMapping("/HomeTreinador")
-    public ModelAndView usuariodetalhes(Usuario usuario){
+    @GetMapping("/HomeTreinador/{id}")
+    public ModelAndView usuariodetalhes(@PathVariable("id") Long id ){
         ModelAndView mv = new ModelAndView("HomeTreinador");
+        Usuario usuario = usuarioRepository.findById(id);
         mv.addObject("usuario",usuario);
         return mv;
     }
     //código que cria a localiação da página configT
-    @GetMapping("/configT")
-    public String config(){
-        return "configT";
+    @GetMapping("/configT/{id}")
+    public ModelAndView config(@PathVariable("id") Long id){
+        ModelAndView mv = new ModelAndView("configT");
+        Usuario usuario = usuarioRepository.findById(id);
+        mv.addObject("usuario",usuario);
+        return mv;
     }
 
+    //código que cria a localização da página confirmarDeletar
+    @GetMapping("/confirmarDeletar")
+    public String confirmarDeletar(){
+        return "confirmarDeletar";
+    }
+
+    //código que deleta o usuario pela página listaClientes
+    @GetMapping("/deletar{id}")
+    public String deletarNormal(@ModelAttribute Usuario usuario){
+        usuarioRepository.delete(usuario);
+        return "redirect:/Vitalusus-2h/Clientes/listaClientes";
+    }
+
+    //código que deleta o uusário
+    @PostMapping("/confirmarDeletar")
+    public String deletar(@ModelAttribute Usuario usuario){
+        String page = "redirect:/Vitalusus-2h/Clientes/confirmarDeletar";
+        Usuario usuarioDb = usuarioRepository.findByLogin(usuario.getEmail(), usuario.getSenha());
+        if (usuarioDb !=null && usuario.getSenha().equals(usuarioDb.getSenha())&&usuario.getEmail().equals(usuario.getEmail())){
+            page = "redirect:/Vitalusus-2h/Clientes/index";
+            usuarioRepository.delete(usuarioDb);
+        }
+        return page;
+    }
+
+    @GetMapping("/confirmarEditar")
+    public String confirmarEditar(){
+        return "confirmarEditar";
+    }
+
+    @GetMapping("/editar{id}")
+    public String entrarEditar(){
+        return "editarSuaConta";
+    }
+
+    @PostMapping("/confirmarEditar")
+    public String entrarNoEditar(@ModelAttribute Usuario usuario){
+        String page = "redirect:/Vitalusus-2h/Clientes/confirmarEditar";
+
+        Usuario usuarioDb = usuarioRepository.findByLogin(usuario.getEmail(), usuario.getSenha());
+        if (usuarioDb !=null && usuario.getSenha().equals(usuarioDb.getSenha())&&usuario.getEmail().equals(usuario.getEmail())){
+            page = "redirect:/Vitalusus-2h/Clientes/editar{id}";
+        }
+        return page;
+    }
+    @GetMapping("/user/{id}")
+    public ModelAndView user(@PathVariable("id") Long id){
+        ModelAndView mv = new ModelAndView("user");
+        Usuario usuario = usuarioRepository.findById(id);
+        mv.addObject("usuario",usuario);
+        return mv;
+    }
 }
 
 

@@ -4,8 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a637ee9-f0a6-42ad-b95a-a74502089a41" name="Changes" comment="Otto -- Até que o código tá bunitin">
+    <list default="true" id="5a637ee9-f0a6-42ad-b95a-a74502089a41" name="Changes" comment="Otto -- Até que o código tá bunitin, de novo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/java/com/vitalususPlus/VitalususPlus/controller/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/Estatisticas.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/Estatisticas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/HomeTreinador.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/HomeTreinador.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/LOGIN.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/LOGIN.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/Sobre-nos.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/Sobre-nos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/bibliotecaVideos.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/bibliotecaVideos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/clienteSucesso.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/clienteSucesso.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/clienteSucessoEditar.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/clienteSucessoEditar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/clientes.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/clientes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/configT.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/configT.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/confirmarDeletar.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/confirmarDeletar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/editarSuaConta.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/editarSuaConta.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/publicar.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/publicar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/VitalususPlus/src/main/resources/templates/user.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +112,7 @@
       <updated>1698882080598</updated>
       <workItem from="1698882085656" duration="119000" />
       <workItem from="1698882319317" duration="13128000" />
-      <workItem from="1698924863947" duration="16129000" />
+      <workItem from="1698924863947" duration="26989000" />
     </task>
     <task id="LOCAL-00001" summary="Otto -- Criando repositório git do novo vitalusus">
       <created>1698942223601</created>
@@ -121,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699012451868</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Otto -- Até que o código tá bunitin, de novo">
+      <created>1699089321819</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699089321819</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +152,7 @@
     <MESSAGE value="Otto -- Criando repositório git do novo vitalusus" />
     <MESSAGE value="Otto -- Coloquei os relacionamentos entre as classes Usuario.ja&#10;, Treinador.java e Admin.java" />
     <MESSAGE value="Otto -- Até que o código tá bunitin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Otto -- Até que o código tá bunitin" />
+    <MESSAGE value="Otto -- Até que o código tá bunitin, de novo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Otto -- Até que o código tá bunitin, de novo" />
   </component>
 </project>

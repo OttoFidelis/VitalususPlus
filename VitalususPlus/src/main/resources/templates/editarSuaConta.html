@@ -52,15 +52,15 @@
         </div>
           <ul class="menu-options"><br/><br/><br/>
               <li><span class="material-symbols-outlined">settings</span>
-              <a class="menu-a"th:href="@{/Vitalusus-2h/Clientes/configT}" target="_self">Configuração</a>
+              <a class="menu-a"th:href="@{/Vitalusus-2h/Clientes/configT/{id}(id=${usuario.id})}" target="_self">Configuração</a>
               </li>
     
               <li><span class="material-symbols-outlined">library_add</span>
-                  <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/bibliotecaVideos}">Seus Vídeos</a>
+                  <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/bibliotecaVideos/{id}(id=${usuario.id})}">Seus Vídeos</a>
               </li>
     
               <li><span class="material-symbols-outlined">trending_up</span>
-                  <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/Estatisticas}">Estatísticas</a>
+                  <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/Estatisticas/{id}(id=${usuario.id})}">Estatísticas</a>
               </li>
     
               <li><span class="material-symbols-outlined">support_agent</span>
@@ -68,7 +68,7 @@
               </li>
     
               <li><span class="material-symbols-outlined">info</span>
-                  <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/Sobre-nos}">Sobre nós</a>
+                  <a class="menu-a" th:href="@{/Vitalusus-2h/Clientes/Sobre-nos/{id}(id=${usuario.id})}">Sobre nós</a>
               </li>
           </ul>
         </nav>
@@ -83,30 +83,30 @@
       </header>
 <div class="formContainer">
  
-  <form th:action="@{/Vitalusus-2h/Clientes/clientesucessoEditar}" form method="post"  onsubmit="return Validar()" class="form">
+  <form form method="post"  onsubmit="return Validar()" class="form">
 
     <input type="hidden" name="_method" value="PUT"/>
-    <a th:href="@{/Vitalusus-2h/Clientes/user}" class="linkseta"  target="_self"><i class='bx bx-left-arrow-circle'
+    <a th:href="@{/Vitalusus-2h/Clientes/user/{id}(id=${usuario.id})}" class="linkseta"  target="_self"><i class='bx bx-left-arrow-circle'
       id="seta"></i></a>
     <div class="txtcad">
       <h1 class="textaocad">Editar sua conta</h1>
     </div>
     <div class="alignCad">
       <label for="nome"></label>
-      <strong>NOME COMPLETO:</strong><input type="text" th:field="${cliente.nome}" class="input" name="nome"
+      <strong>NOME COMPLETO:</strong><input type="text" class="input" name="nome"
         required="required" id="nome">
       <br />
       <label for="email"></label>
-      <strong>EMAIL</strong> <input type="email" th:field="${cliente.email}" class="input" name="email"
+      <strong>EMAIL</strong> <input type="email" class="input" name="email"
         required="required" id="email">
       <br />
       <label for="telefone"></label>
-      <strong>TELEFONE:</strong> <input type="tel" th:field="${cliente.telefone}" class="input" name="telefone" min=""
+      <strong>TELEFONE:</strong> <input type="tel" class="input" name="telefone" min=""
         maxlength="" required="required" id="telefone">
       <br />
 
       <label for="txtsen"></label>
-      <strong>NOVA SENHA:</strong> <input type="password" class="input" th:field="${cliente.senha}" name="senha" min="8"
+      <strong>NOVA SENHA:</strong> <input type="password" class="input"  name="senha" min="8"
         maxlength="8" required="required" id="txtsen" checked="checked">
       <br />
 
